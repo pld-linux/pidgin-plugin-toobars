@@ -36,17 +36,17 @@ Adds toolbar and status bar to Pidgin buddy list.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name} --all-name
+%find_lang toobars
+rm -f $RPM_BUILD_ROOT%{_libdir}/pidgin/toobars.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files -f toobars.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
-%{_libdir}/pidgin/toobars.so
+%attr(755,root,root) %{_libdir}/pidgin/toobars.so
 %{_pixmapsdir}/pidgin/buttons/*.png
