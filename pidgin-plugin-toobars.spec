@@ -1,6 +1,3 @@
-#
-# TODO: BRs
-#
 %define		short_name pidgin-toobars
 Summary:	Adds toolbar and status bar to Pidgin buddy list
 Name:		pidgin-plugin-toobars
