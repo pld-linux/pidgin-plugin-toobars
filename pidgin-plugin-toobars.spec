@@ -13,7 +13,11 @@ Source0:	http://vayurik.ru/wordpress/wp-content/uploads/toobars/%{version}/%{sho
 URL:		http://vayurik.ru/wordpress/en/toobars/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	farsight2-devel
 BuildRequires:	freetype-devel
+BuildRequires:	gettext-devel
+BuildRequires:	intltool
+BuildRequires:	libidn-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libtool
 BuildRequires:	pidgin-devel
